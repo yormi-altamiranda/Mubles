@@ -1,0 +1,178 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&family=Noto+Sans+KR&display=swap');
+$font-title: 'Kumbh Sans', sans-serif;
+$font-body: 'Noto Sans KR', sans-serif;
+
+// Colors
+$light-brown: #e7dec8;
+$light-blue: #ecf4f3;
+$light-gray: #f4f4f4;
+$light-pink: #ffe2e2;
+$light-yellow: #f8fab8;
+$light-purple: #dcd6f7;
+$oragen: #ffa41b;
+$black: #000;
+$white: #fff;
+
+@import 'normalize';
+@import 'grid';
+@import 'media-query';
+@import 'input';
+@import 'card_products';
+@import 'carousel';
+@import 'carousel.theme';
+
+
+
+
+body{
+    font-family: $font-body;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: $font-title; 
+}
+
+.title-lg {
+    font-family: $font-title;
+    font-size: 3rem;
+    font-weight: 300;
+    @include breakpoint(480px){
+        margin: 30px 0;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    @include breakpoint(1024px){
+        font-size: 3rem;
+    }
+    span{
+        font-weight: 600;
+        color: $oragen;
+    }
+    margin: 0;
+}
+
+.title-sm {
+    font-family: $font-title;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.title-xs {
+    font-family: $font-title;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: lighten($black, 40%);
+}
+
+.text {
+    font-family: $font-body;
+    font-size: .9rem;
+    line-height: 27px;
+    color: lighten($black, 40%);
+}
+
+.text-d {
+    font-family: $font-body;
+    font-size: 1.2rem;
+    line-height: 27px;
+    color: lighten($black, 60%);
+}
+
+
+
+.price{
+    color: lighten($black, 40%);
+    font-family: $font-title;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.offer{
+        font-family: $font-title;
+        font-weight: 400;
+        font-size: 1.2rem;
+        @include breakpoint(480px){
+            margin: 30px 0;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    
+    color: lighten($black, 40%);
+    margin: 0;
+    span{
+        font{
+            weight: 700;
+            size: 3rem !important;
+        }
+        color: $oragen;
+
+    }
+}
+
+// Text Transform
+.uppercase{
+    text-transform: uppercase;
+}
+.bold-lg{
+    font-weight: 700;
+}
+
+.text-center{
+    text-align: center;
+}
+// Colors Bg
+
+.bg-color-brow { 
+    background: $light-brown;
+}
+.bg-color-blue {
+    background: $light-blue;
+}
+.bg-color-pink {
+    background: $light-pink;
+}
+.bg-color-yellow {
+    background: $light-yellow;
+}
+
+.bg-color-purple {
+    background: $light-purple;
+}
+.bg-color-gray{
+    background: lighten($black, 97%);
+}
+
+// Padding Sections
+.section {
+    padding: 50px 0;
+}
+// Padding 
+.p-sm{
+    padding: 2rem;
+}
+// Img Responsive
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+
+.footer{
+    padding: 20px 0;
+    .copy{
+        font-size: .8rem;
+        color: lighten($black, 50%);
+        @include breakpoint(480px){
+            text-align: center;
+        }
+    }
+}
+

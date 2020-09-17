@@ -1,0 +1,29 @@
+.card{
+
+    border-radius: 3px 3px 0 0;
+
+    &_footer{
+        background: $white;
+        padding: 10px;
+        border-radius: 0 0 3px 3px;
+        &_title{
+            font-family: $font-title;
+            font-size: 16px;
+            font-weight: 400;
+            color: lighten($black, 40%);
+            margin: 0;
+        }
+        &_text{
+            font-family: $font-body;
+            font-size: 12px;
+            line-height: 20px;
+            margin: 0;
+        }
+        &_price{
+            font-family: $font-body;
+            font-size: 14px;
+            color: $black;
+            margin: 0;
+        }
+    }
+}
